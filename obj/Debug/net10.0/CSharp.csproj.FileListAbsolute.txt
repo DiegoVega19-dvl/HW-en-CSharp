@@ -1,0 +1,14 @@
+/home/diego/Desktop/CSharp/bin/Debug/net10.0/CSharp
+/home/diego/Desktop/CSharp/bin/Debug/net10.0/CSharp.deps.json
+/home/diego/Desktop/CSharp/bin/Debug/net10.0/CSharp.runtimeconfig.json
+/home/diego/Desktop/CSharp/bin/Debug/net10.0/CSharp.dll
+/home/diego/Desktop/CSharp/bin/Debug/net10.0/CSharp.pdb
+/home/diego/Desktop/CSharp/obj/Debug/net10.0/CSharp.GeneratedMSBuildEditorConfig.editorconfig
+/home/diego/Desktop/CSharp/obj/Debug/net10.0/CSharp.AssemblyInfoInputs.cache
+/home/diego/Desktop/CSharp/obj/Debug/net10.0/CSharp.AssemblyInfo.cs
+/home/diego/Desktop/CSharp/obj/Debug/net10.0/CSharp.csproj.CoreCompileInputs.cache
+/home/diego/Desktop/CSharp/obj/Debug/net10.0/CSharp.dll
+/home/diego/Desktop/CSharp/obj/Debug/net10.0/refint/CSharp.dll
+/home/diego/Desktop/CSharp/obj/Debug/net10.0/CSharp.pdb
+/home/diego/Desktop/CSharp/obj/Debug/net10.0/CSharp.genruntimeconfig.cache
+/home/diego/Desktop/CSharp/obj/Debug/net10.0/ref/CSharp.dll
