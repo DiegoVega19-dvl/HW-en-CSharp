@@ -106,10 +106,33 @@ namespace CSharpVariables
             Console.WriteLine(numeroR);
 
 
+            // calculo de la hipotenusa
+
+            /*Console.WriteLine("ingrese el valor del cateto A: ");
+            int A = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("ingrese el valor del cateto B: ");
+            int B = Convert.ToInt32(Console.ReadLine());
+
+            double hipotenusa = Math.Sqrt((A * A) + (B * B));
+
+            Console.WriteLine("el valor de la Hipotenusa es: " + hipotenusa); */
+
+            // String methods https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-10.0
+
+            String nombreCompleto = "Juan Diego";
+
+            nombreCompleto = nombreCompleto.ToUpper();
+
+            Console.WriteLine(nombreCompleto);
 
 
 
-            Console.ReadKey();
+
+
+              
+
+
 
         }
 
