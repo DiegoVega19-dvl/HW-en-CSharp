@@ -123,14 +123,115 @@ namespace CSharpVariables
             String nombreCompleto = "Juan Diego";
 
             nombreCompleto = nombreCompleto.ToUpper();
-
             Console.WriteLine(nombreCompleto);
 
+            // estructuras de control
+
+            // if
+
+            /* Console.WriteLine("ingresa tu edad: ");
+            int edad = Convert.ToInt32(Console.ReadLine());
+
+            if (edad >= 18)
+            {
+                Console.WriteLine("cumples con la mayoria de edad, puede pasar");
+            }
+            else
+            {
+                Console.WriteLine("no cumples con la mayoria de edad.");
+            } */
+
+
+            // switch
+
+            /*Console.WriteLine("ingresa un dia de la semana");
+            String? dia = Console.ReadLine();
+
+            dia = dia?.ToLower();
+
+            switch (dia)
+            {
+                case "lunes":
+                    Console.WriteLine("Hoy es " + dia);
+                    break;
+
+                case "martes":
+                    Console.WriteLine("Hoy es " + dia);
+                    break;
+
+                case "miercoles":
+                    Console.WriteLine("Hoy es " + dia);
+                    break;
+
+                case "jueves":
+                    Console.WriteLine("Hoy es " + dia);
+                    break;
+
+                case "viernes":
+                    Console.WriteLine("Hoy es " + dia);
+                    break;
+
+                case "sabado":
+                    Console.WriteLine("Hoy es " + dia);
+                    break;
+
+                case "domingo":
+                    Console.WriteLine("Hoy es " + dia);
+                    break;
+
+                default:
+                    Console.WriteLine(dia + " no es un numero de la semana");
+                    break;
+            } */
+
+
+            /*Console.WriteLine("ingrese una temperatura: (C)");
+            double temp = Convert.ToDouble(Console.ReadLine());
+
+            if (temp >= 18 && temp <= 24)
+            {
+                Console.WriteLine("esta dentro la temperatua perfecta");
+            }
+            else if (temp > 24 && temp <= 29)
+            {
+                Console.WriteLine("la temperatura sigue es aceptable");
+            }
+            else if (temp > 30)
+            {
+                Console.WriteLine("ya hace calor");
+            }
+            else if (temp <= 17 && temp >= 10)
+            {
+                Console.WriteLine("esta fresco");
+            }
+            else if (temp < 10)
+            {
+                Console.WriteLine("hace frio");
+            } */
+
+
+            // bucle while
+
+            System.Console.WriteLine("ingresa un numero: ");
+            int nume = Convert.ToInt32(Console.ReadLine());
+
+            int limite = 15;
+
+            while(nume<=limite)
+            {
+                Console.WriteLine(nume);
+                nume++;
+            }
+
+            
+
+            
 
 
 
 
-              
+
+
 
 
 
