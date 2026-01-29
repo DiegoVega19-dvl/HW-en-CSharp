@@ -9,59 +9,59 @@ namespace CSharpVariables
     {
         static void Main(string[] args)
         {
-            // hola mundo
+            /* // hola mundo
 
-            Console.WriteLine("Hello, World!");
+             Console.WriteLine("Hello, World!");
 
 
-            // tipos de datos
+             // tipos de datos
 
-            // los tipos de datos son practimente igual a java
+             // los tipos de datos son practimente igual a java
 
-            // VARIABLES
+             // VARIABLES
 
-            int numero = 10;
-            Console.WriteLine(numero);
+             int numero = 10;
+             Console.WriteLine(numero);
 
-            string nombre = "Juan";
-            Console.WriteLine(nombre);
+             string nombre = "Juan";
+             Console.WriteLine(nombre);
 
-            double doble = 12.383757339;
-            Console.WriteLine(doble);
+             double doble = 12.383757339;
+             Console.WriteLine(doble);
 
-            float flotante = 12.2f;
-            Console.WriteLine(flotante);
+             float flotante = 12.2f;
+             Console.WriteLine(flotante);
 
-            bool myBool = false;
-            Console.WriteLine(myBool);
+             bool myBool = false;
+             Console.WriteLine(myBool);
 
-            decimal x = 12.3m;
-            Console.WriteLine(x);
+             decimal x = 12.3m;
+             Console.WriteLine(x);
 
-            Console.WriteLine($"mi numero es: {numero} y mi valor booleano es: {nombre}");
+             Console.WriteLine($"mi numero es: {numero} y mi valor booleano es: {nombre}");
 
-            // CONSTANTES
+             // CONSTANTES
 
-            const string miConstante = "esto es una constante";
-            Console.WriteLine(miConstante);
+             const string miConstante = "esto es una constante";
+             Console.WriteLine(miConstante);
 
-            // diccionario de datos
+             // diccionario de datos
 
-            var miDiccionario = new Dictionary<string, int>
-            {
-              {"juan", 1},
-              {"ana", 2},
-              {"mario",3}
-            };
+             var miDiccionario = new Dictionary<string, int>
+             {
+               {"juan", 1},
+               {"ana", 2},
+               {"mario",3}
+             };
 
-            // for
+             // for
 
-            for (int i = 0; i < 4; i++)
-            {
-                Console.Write(i);
-                Console.WriteLine(i);
+             for (int i = 0; i < 4; i++)
+             {
+                 Console.Write(i);
+                 Console.WriteLine(i);
 
-            }
+             } */
 
             // Type Casting
 
@@ -212,26 +212,155 @@ namespace CSharpVariables
 
             // bucle while
 
-            System.Console.WriteLine("ingresa un numero: ");
-            int nume = Convert.ToInt32(Console.ReadLine());
+            /* System.Console.WriteLine("ingresa un numero: ");
+             int nume = Convert.ToInt32(Console.ReadLine());
 
-            int limite = 15;
+             int limite = 15;
 
-            while(nume<=limite)
+             while(nume<=limite)
+             {
+                 Console.WriteLine(nume);
+                 nume++;
+             } */
+
+
+            // for loop
+
+            /* for (int i = 0; i < 10; i++)
             {
-                Console.WriteLine(nume);
-                nume++;
+                Console.WriteLine(i);
+            } */
+
+
+            /*Console.WriteLine("cuantas filas quieres agregar?: ");
+            int filas = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("cuantas columnas quieres agregar?: ");
+            int columnas = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("que simbolo quieres imprimir?: ");
+            string? forma = Console.ReadLine();
+
+            for (int v = 0; v < filas; v++)
+            {
+
+                for (int i = 0; i < columnas; i++)
+                {
+                    Console.Write(forma);
+                }
+
+                Console.WriteLine();
+            } */
+
+
+            // piedra, papel o tijera
+
+
+            Random aleatorio = new Random();
+            bool jugarOtravez = true;
+            string jugador;
+            string computadora;
+            string respuesta;
+
+            while (jugarOtravez)
+            {
+                jugador = "";
+                computadora = "";
+                //respuesta = "";
+
+                while (jugador != "PIEDRA" && jugador != "PAPEL" && jugador != "TIJERAS")
+                {
+                    Console.WriteLine("Bienvenid@ a piedra papel o tijera!!");
+                    Console.WriteLine("elije: ");
+                    jugador = Console.ReadLine()!;
+                    jugador = jugador.ToUpper();
+
+                }
+
+                switch (aleatorio.Next(1, 4))
+                {
+                    case 1:
+                        computadora = "PIEDRA";
+                        break;
+
+                    case 2:
+                        computadora = "PAPEL";
+                        break;
+
+                    case 3:
+                        computadora = "TIJERAS";
+                        break;
+                }
+
+                Console.WriteLine("elegiste: " + jugador);
+                Console.WriteLine("CPU: " + computadora);
+
+                switch (jugador)
+                {
+                    case "PIEDRA":
+                        if (computadora == "PIEDRA")
+                        {
+                            Console.WriteLine("ES UN EMPATE");
+                        }
+                        else if (computadora == "PAPEL")
+                        {
+                            Console.WriteLine("PERDISTE");
+                        }
+                        else
+                        {
+                            Console.WriteLine("GANASTE!!!");
+                        }
+                        break;
+
+                    case "PAPEL":
+                        if (computadora == "PIEDRA")
+                        {
+                            Console.WriteLine("GANASTE!!!");
+                        }
+                        else if (computadora == "PAPEL")
+                        {
+                            Console.WriteLine("ES UN EMPATE");
+                        }
+                        else
+                        {
+                            Console.WriteLine("PERDISTE");
+                        }
+                        break;
+
+                    case "TIJERAS":
+                        if (computadora == "PIEDRA")
+                        {
+                            Console.WriteLine("PERDISTE");
+                        }
+                        else if (computadora == "PAPEL")
+                        {
+                            Console.WriteLine("GANASTE!!!");
+                        }
+                        else
+                        {
+                            Console.WriteLine("ES UN EMPATE");
+                        }
+                        break;
+                }
+
+                Console.WriteLine("quieres jugar otra vez: (S/N): ");
+                respuesta = Console.ReadLine()!;
+                respuesta = respuesta.ToUpper();
+
+                if (respuesta == "S")
+                {
+                    jugarOtravez = true;
+                }
+                else
+                {
+                    jugarOtravez = false;
+                }
+
+
+
             }
 
-            
-
-            
-
-
-
-
-
-
+            Console.WriteLine("gracias por jugar!!!");
 
 
 
