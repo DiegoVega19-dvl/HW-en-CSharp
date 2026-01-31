@@ -256,7 +256,7 @@ namespace CSharpVariables
             // piedra, papel o tijera
 
 
-            Random aleatorio = new Random();
+            /*Random aleatorio = new Random();
             bool jugarOtravez = true;
             string jugador;
             string computadora;
@@ -360,7 +360,106 @@ namespace CSharpVariables
 
             }
 
-            Console.WriteLine("gracias por jugar!!!");
+            Console.WriteLine("gracias por jugar!!!"); */
+
+
+            // calculadora basica
+
+            double num1 = 0;
+            double num2 = 0;
+            double resultado;
+            string opcion;
+            bool seguir = true;
+
+            while (seguir)
+            {
+                Console.WriteLine("CALCULADOR ABASICA DE DOS DIGITOS");
+                Console.WriteLine("elije una opcion: ");
+                Console.WriteLine("Sumar: (1) ");
+                Console.WriteLine("Restar: (2) ");
+                Console.WriteLine("Multiplicar: (3)");
+                Console.WriteLine("Dividir: (4)");
+                int operacion;
+                operacion = Convert.ToInt32(Console.ReadLine());
+
+                if (operacion != 1 && operacion != 2 && operacion != 3 && operacion != 4)
+                {
+                    Console.WriteLine("------------------------------------");
+                    Console.WriteLine("solo ingresa opciones disponibles!!!");
+                    Console.WriteLine("------------------------------------");
+                    
+                }
+                else
+                {
+                    switch (operacion)
+                    {
+                        case 1:
+                            Console.WriteLine("elegiste suma: ");
+                            Console.WriteLine("ingresa el valor del primer numero: ");
+                            num1 = Convert.ToDouble(Console.ReadLine());
+                            Console.WriteLine("ingresa el valor del primer numero: ");
+                            num2 = Convert.ToDouble(Console.ReadLine());
+                            resultado = num1 + num2;
+                            Console.WriteLine("el resultado de la suma es: " + resultado);
+                            break;
+
+                        case 2:
+                            Console.WriteLine("elegiste resta: ");
+                            Console.WriteLine("ingresa el valor del primer numero: ");
+                            num1 = Convert.ToDouble(Console.ReadLine());
+                            Console.WriteLine("ingresa el valor del primer numero: ");
+                            num2 = Convert.ToDouble(Console.ReadLine());
+                            resultado = num1 - num2;
+                            Console.WriteLine("el resultado de la resta es: " + resultado);
+                            break;
+
+                        case 3:
+                            Console.WriteLine("elegiste multiplicacion: ");
+                            Console.WriteLine("ingresa el valor del primer numero: ");
+                            num1 = Convert.ToDouble(Console.ReadLine());
+                            Console.WriteLine("ingresa el valor del primer numero: ");
+                            num2 = Convert.ToDouble(Console.ReadLine());
+                            resultado = num1 * num2;
+                            Console.WriteLine("el resultado de la multiplicacion es: " + resultado);
+                            break;
+
+                        case 4:
+                            Console.WriteLine("elegiste Division: ");
+                            Console.WriteLine("ingresa el valor del primer numero: ");
+                            num1 = Convert.ToDouble(Console.ReadLine());
+                            Console.WriteLine("ingresa el valor del primer numero: ");
+                            num2 = Convert.ToDouble(Console.ReadLine());
+                            resultado = num1 / num2;
+                            Console.WriteLine("el resultado de la Division es: " + resultado);
+                            break;
+                    }
+
+                    Console.WriteLine("quieres hacer otra operacion?: (S/N)");
+                    opcion = Console.ReadLine()!;
+                    opcion = opcion.ToUpper();
+
+                    if (opcion == "S")
+                    {
+                        seguir = true;
+                    }
+                    else
+                    {
+                        seguir = false;
+                    }
+
+                }
+
+
+
+
+            }
+
+
+
+
+
+
+
 
 
 
